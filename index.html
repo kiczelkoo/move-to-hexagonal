@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Move to Hexagonal Architecture</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="assets/bckg/renovation.png">
+          <h1 class="overlay">The move to hexagonal architecture</h1>
+          <h2 class="pink overlay">Lessons learned from Java applications</h2>
+        </section>
+        <section>
+          <section data-background-image="assets/bckg/trends.png">
+            <h2 class="overlay">Trends</h2>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="assets/bckg/hexagonal2.png" style="position: relative">
+            <h2 style="position: absolute; right:0" class="overlay">Hexagonal Architecture</h2>
+          </section>
+          <section>
+            <h5>Three-Layers architecture (classical view)</h5>
+            <img data-src="assets/lh-three-layers-architecture-classic.excalidraw.png">
+          </section>
+          <section>
+            <h5>Three-Layers architecture (hexagonal view)</h5>
+            <img data-src="assets/lh-three-layers-architecture-hex.excalidraw.png">
+          </section>
+          <section>
+            <h5>Hexagonal architecture</h5>
+            <img data-src="assets/lh-hexagonal-architecture.excalidraw.png">
+          </section>
+          <section>
+            <h5>Hexagonal architecture</h5>
+            <img src="assets/hexagonal-arch-dark.png">
+          </section>
+          <section data-background-image="assets/bckg/operasinger2.png">
+            <h5>Key advantages of hexagonal architecture</h5>
+            <ul>
+              <li><span class="cyan">exposes</span> domain as the most important element</li>
+              <li><span class="cyan">separates</span> technical and business aspects</li>
+              <li><span class="cyan">screams</span> out the purpose of the system</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="assets/bckg/changing-world.png">
+            <h2 class="overlay">Reasons for the move to hexagonal architecture</h2>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="assets/bckg/lego.png">
+            <h2 class="overlay">Experience</h2>
+          </section>
+          <section data-background-image="assets/bckg/sailing-boat.png">
+            <h2 class="overlay">Case study 1</h2>
+          </section>
+          <section>
+            <h5>System overview</h5>
+            <img src="assets/casestudy1-overview.png">
+          </section>
+          <section>
+            <h5>My reasons for a change</h5>
+            <div class="r-stack">
+              <img src="assets/casestudy1-common.png">
+              <img class="fragment" src="assets/casestudy1.png">
+            </div>
+          </section>
+          <section data-background-image="assets/bckg/route66.png">
+            <h2 class="overlay">Journey</h2>
+          </section>
+          <section data-background-image="assets/bckg/supply-chain.png">
+            <h2 class="overlay">Case study 2</h2>
+          </section>
+          <section>
+            <h5>System overview</h5>
+            <div class="r-stack">
+              <img src="assets/casestudy2-overview1.png">
+              <img class="fragment" src="assets/casestudy2-overview.png">
+            </div>
+          </section>
+          <section>
+            <h5>My reasons for a change</h5>
+            <img src="assets/doc-vs-real.png">
+<!--            <p>Documentation vs Reality</p>-->
+          </section>
+          <section data-background-image="assets/bckg/divide-and-conquer.png">
+            <h2 class="overlay">Divide and conquer</h2>
+          </section>
+        </section>
+        <section data-background-image="assets/bckg/decision.png">
+          <h5 class="overlay">How to make a decision?</h5>
+          <ul style="list-style: none">
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;greenfield project</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;migration to cloud/microservices/modularization</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;changes around your application</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;no one knows what it does</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;no architecture</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;you are bored and have too much time</li>
+          </ul>
+        </section>
+        <section data-background-image="assets/bckg/lessons-learned.png">
+          <h5 class="overlay">Lessons learned</h5>
+          <ul style="list-style: none">
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;good layered architecture makes migration easy</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;DDD is not needed, but it helps</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;invest time in analysis</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;architecture style vs business components' structure</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;document rules</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;POC</li>
+            <li class="overlay fragment">&#128123;&nbsp;&nbsp;ArchUnits</li>
+          </ul>
+        </section>
+        <section>
+          <section data-background-image="assets/bckg/diamonds.png" data-transition="none">
+              <h2 class="overlay">Was it worth it?</h2>
+          </section>
+          <section data-background-image="assets/bckg/diamonds.png">
+            <h1 class="overlay">YES</h1>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="assets/bckg/thankyou2.png"></section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      })
+    </script>
+  </body>
+</html>
