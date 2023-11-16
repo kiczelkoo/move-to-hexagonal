@@ -21,3 +21,13 @@
     background: #8f8f8f;
     background: rgba(0,0,0,0.6);
 }
+section#capgemini-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1050;
+}
+
+section#capgemini-logo svg {
+    height: 4rem;
+}
